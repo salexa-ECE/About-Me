@@ -1,11 +1,292 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>My Mini Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Résumé and engineering portfolio for an Electrical and Computer Engineering student at the University of Arkansas at Little Rock."
+    />
+    <meta name="theme-color" content="#17324d" />
+    <title>Stephen A. Alexander | Electrical and Computer Engineering Student</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>My Theme Title</h1>
-    <p>This site is about ________. Here is one cool fact: ________.</p>
-    <a href="https://google.com">Google</a>
-    <img src="photo.jpg" alt="Describe your image" />
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="site-name" href="#top">[Stephen A. Alexander]</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section" id="top" aria-labelledby="page-title">
+        <div class="container hero-content">
+          <p class="eyebrow">Central Arkansas</p>
+          <h1 id="page-title">[Stephen A. Alexander]</h1>
+          <p class="headline">
+            Electrical and Computer Engineering Student | Military Medical
+            Background | Aspiring Engineer
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="assets/resume.pdf" download>
+              Download Résumé (PDF)
+            </a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+          <p class="resume-note" id="resume-note">
+            Add your PDF at <code>assets/resume.pdf</code> before publishing the
+            download link.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="summary-heading">
+        <div class="container">
+          <h2 id="summary-heading">Professional Summary</h2>
+          <p class="summary">
+            Electrical and Computer Engineering student at the University of
+            Arkansas at Little Rock with a background in military medical
+            operations and emergency medical care. Developing skills in
+            programming, mathematical analysis, and engineering fundamentals
+            while pursuing a long-term career in electrical and computer
+            engineering.
+          </p>
+          <p class="summary">
+            Interested in power systems, electronics, embedded systems,
+            cybersecurity, and advanced engineering technologies. Brings
+            experience in responsibility, teamwork, procedural discipline, and
+            demanding operational environments.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="education" aria-labelledby="education-heading">
+        <div class="container">
+          <h2 id="education-heading">Education</h2>
+          <article class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>University of Arkansas at Little Rock</h3>
+                <p>Bachelor of Science in Electrical and Computer Engineering</p>
+              </div>
+              <p class="entry-meta">In progress</p>
+            </div>
+            <p><strong>Expected graduation:</strong> [EXPECTED GRADUATION DATE]</p>
+            <div class="coursework">
+              <h4>Relevant coursework — confirm status before publishing</h4>
+              <p>Update this list as courses are in progress or completed.</p>
+              <ul class="tag-list" aria-label="Coursework to verify">
+                <li>Calculus II</li>
+                <li>Physics I</li>
+                <li>Discrete Mathematics</li>
+                <li>Programming I</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <div class="container">
+          <h2 id="experience-heading">Military &amp; Medical Experience</h2>
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>Military Service</h3>
+              <p class="entry-meta">[SERVICE DATES]</p>
+            </div>
+            <p><strong>Title / rank:</strong> [OFFICIAL RANK AND JOB TITLE]</p>
+            <p><strong>Unit / organization:</strong> [UNIT OR ORGANIZATION]</p>
+            <p class="placeholder-guidance">
+              Add responsibilities and accomplishments that accurately reflect
+              your service. Potential topics include medical readiness,
+              emergency response, coordination, established procedures,
+              accountability, equipment readiness, documentation, and
+              logistics.
+            </p>
+          </article>
+
+          <article class="entry">
+            <div class="entry-heading">
+              <h3>Prior Paramedic Experience</h3>
+              <p class="entry-meta">[EMPLOYMENT DATES]</p>
+            </div>
+            <p><strong>Employer / organization:</strong> [EMPLOYER OR ORGANIZATION]</p>
+            <p><strong>Job title:</strong> [OFFICIAL JOB TITLE]</p>
+            <p class="placeholder-guidance">
+              Add verified responsibilities and accomplishments. Include
+              transferable skills such as sound judgment, systematic
+              troubleshooting, documentation, teamwork, and clear
+              communication only where they describe your experience.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading">Technical Skills</h2>
+          <p class="section-intro">
+            Coursework and learning are identified separately from skills you
+            can independently demonstrate. Update levels to match your current
+            experience.
+          </p>
+          <div class="skills-grid">
+            <article class="skill-group">
+              <h3>Programming &amp; Web</h3>
+              <ul>
+                <li><strong>Python:</strong> Introductory coursework and practice</li>
+                <li><strong>HTML:</strong> Learning through coursework</li>
+                <li><strong>CSS:</strong> [UPDATE SKILL LEVEL]</li>
+                <li><strong>JavaScript:</strong> [UPDATE SKILL LEVEL]</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Engineering &amp; Mathematics</h3>
+              <ul>
+                <li>Mathematical analysis and physics — current coursework</li>
+                <li>Electrical circuits — add as studied or practiced</li>
+                <li>Digital logic — add as studied or practiced</li>
+                <li>Embedded systems — add as studied or practiced</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li><strong>Git and GitHub:</strong> [UPDATE SKILL LEVEL]</li>
+                <li><strong>NumPy:</strong> [UPDATE SKILL LEVEL]</li>
+                <li><strong>Matplotlib:</strong> [UPDATE SKILL LEVEL]</li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3>Independently Demonstrable</h3>
+              <p>[ADD ONLY SKILLS YOU CAN DEMONSTRATE INDEPENDENTLY]</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading">Projects</h2>
+          <p class="section-intro">
+            Draft entries are labeled honestly; update each description and
+            status to match the finished work.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>Course Registration Simulator</h3>
+              <p>
+                <strong>Draft:</strong> A menu-driven Python program for
+                practicing program flow, functions, data structures, and user
+                interaction.
+              </p>
+              <dl class="project-details">
+                <div><dt>Context</dt><dd>Programming I coursework</dd></div>
+                <div><dt>Technologies</dt><dd>Python</dd></div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Coursework project; update to match the final implementation. Completion not confirmed.</dd>
+                </div>
+              </dl>
+              <p class="project-link-placeholder">
+                GitHub: [ADD PROJECT REPOSITORY URL]
+              </p>
+            </article>
+
+            <article class="project-card">
+              <h3>Personal Résumé Website</h3>
+              <p>
+                A responsive professional résumé website designed to present
+                education, experience, and engineering projects.
+              </p>
+              <dl class="project-details">
+                <div>
+                  <dt>Context</dt>
+                  <dd>Programming I coursework and professional development</dd>
+                </div>
+                <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript</dd></div>
+                <div><dt>Status</dt><dd>In development</dd></div>
+              </dl>
+              <p class="project-link-placeholder">
+                GitHub: [ADD PROJECT REPOSITORY URL]
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="interests-heading">
+        <div class="container">
+          <h2 id="interests-heading">Areas of Interest</h2>
+          <ul class="interest-list">
+            <li>Electrical power systems and grid infrastructure</li>
+            <li>Electronics and embedded systems</li>
+            <li>Cybersecurity and computer engineering</li>
+            <li>Advanced engineering research and quantum technologies</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-content">
+          <div>
+            <h2 id="contact-heading">Contact</h2>
+            <p>
+              I welcome conversations about engineering internships, career
+              opportunities, and professional networking.
+            </p>
+          </div>
+          <div class="contact-card">
+            <dl class="contact-list">
+              <div>
+                <dt>Email</dt>
+                <dd><span id="email-address">[YOUR PROFESSIONAL EMAIL]</span></dd>
+              </div>
+              <div>
+                <dt>Phone</dt>
+                <dd>[YOUR PHONE NUMBER — OPTIONAL]</dd>
+              </div>
+              <div>
+                <dt>LinkedIn</dt>
+                <dd>[YOUR LINKEDIN URL]</dd>
+              </div>
+              <div>
+                <dt>GitHub</dt>
+                <dd>[YOUR GITHUB URL]</dd>
+              </div>
+            </dl>
+            <button class="button button-secondary copy-button" id="copy-email" type="button" hidden>
+              Copy Email
+            </button>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+            <p class="placeholder-guidance">
+              Replace the placeholders with accurate contact details. Turn
+              LinkedIn and GitHub URLs into links once you have the correct
+              profile addresses.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>[YOUR FULL NAME] · Central Arkansas</p>
+        <p>Résumé and project details are works in progress.</p>
+      </div>
+    </footer>
   </body>
 </html>
