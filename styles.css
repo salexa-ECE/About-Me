@@ -8,7 +8,6 @@
   --border: #d6dee5;
   --surface: #f3f6f8;
   --white: #ffffff;
-  --page-ground: #fbfcfb;
   --content-width: 70rem;
 }
 
@@ -22,14 +21,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--page-ground);
-  background-image:
-    radial-gradient(ellipse at 9% 15%, rgb(103 119 70 / 8%), transparent 28rem),
-    radial-gradient(ellipse at 91% 43%, rgb(42 104 135 / 6%), transparent 30rem),
-    radial-gradient(ellipse at 72% 94%, rgb(190 125 48 / 5%), transparent 26rem),
-    linear-gradient(90deg, transparent 97%, rgb(23 50 77 / 3%) 98%),
-    linear-gradient(0deg, transparent 97%, rgb(23 50 77 / 3%) 98%);
-  background-size: auto, auto, auto, 4rem 4rem, 4rem 4rem;
+  background: var(--white);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
