@@ -131,8 +131,24 @@ a {
   color: var(--white);
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+  align-items: center;
+  gap: 2rem;
+}
+
 .hero-content {
-  max-width: var(--content-width);
+  min-width: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-height: 24rem;
+  aspect-ratio: 4 / 3;
+  border-radius: 0.3rem;
+  object-fit: cover;
 }
 
 .eyebrow {
@@ -453,6 +469,14 @@ h4 {
 
   .hero {
     padding-block: 3.25rem;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    max-height: 20rem;
   }
 
   .skills-grid,
