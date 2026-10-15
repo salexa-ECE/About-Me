@@ -151,6 +151,15 @@ a {
   object-fit: cover;
 }
 
+.service-image {
+  display: block;
+  width: 100%;
+  max-height: 24rem;
+  margin-block: 1rem 1.5rem;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
 .eyebrow {
   margin: 0 0 0.5rem;
   color: #d6e3ed;
